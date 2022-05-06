@@ -1,9 +1,6 @@
 package com.ShoppingCart.Shopping.Models;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "cart")
@@ -20,7 +17,6 @@ public class Cart {
     private float price;
     @Column(name="cart_quantity")
     private int quantity;
-
 
     public Cart(String name, String type, float price, int quantity) {
         this.name = name;

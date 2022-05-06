@@ -12,8 +12,8 @@ public class Book extends Product {
 
     private int publishedDate;
 
-    public Book(long productId, String productName, float price, String genre, String author, int publishedDate) {
-        super(productId, productName, price);
+    public Book(long productId, String productName, float price, int quanitity, String genre, String author, int publishedDate) {
+        super(productId, productName, price, quanitity);
         this.genre = genre;
         this.author = author;
         this.publishedDate = publishedDate;

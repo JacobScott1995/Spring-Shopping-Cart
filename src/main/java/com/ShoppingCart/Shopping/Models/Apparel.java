@@ -1,9 +1,6 @@
 package com.ShoppingCart.Shopping.Models;
 
-import com.ShoppingCart.Shopping.Models.Product;
-
 import javax.persistence.Entity;
-import javax.persistence.Id;
 @Entity
 public class Apparel extends Product {
 
@@ -17,8 +14,8 @@ public class Apparel extends Product {
     private String design;
 
 
-    public Apparel(long productId, String productName, float price, String type, String brand, String design) {
-        super(productId, productName, price);
+    public Apparel(long productId, String productName, float price, int quantity, String type, String brand, String design) {
+        super(productId, productName, price, quantity);
         this.type = type;
         this.brand = brand;
         this.design = design;

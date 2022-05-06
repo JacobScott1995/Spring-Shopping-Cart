@@ -23,6 +23,10 @@ public class CartServices implements ShoppingCartService {
         this.productRepository = productRepository;
     }
 
+    @Override
+    public void removeAll(){
+        products.clear();
+    }
 
     @Override
     public void addProduct(Product product) {

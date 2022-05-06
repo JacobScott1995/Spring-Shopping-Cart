@@ -21,13 +21,18 @@ public class CartController {
     public Map<Product, Long> getCart() {
         return cartServices.getProducts();
     }
-    @PostMapping
+    @PostMapping("/add")
     public void addToCart(@RequestBody Product product) {
         cartServices.addProduct(product);
     }
-    @DeleteMapping
+    @DeleteMapping("/modify")
     public void removeFromCart(Product product) {
         cartServices.removeProduct(product);
+    }
+
+    @DeleteMapping("/clear")
+    public void removeAll() {
+        cartServices.removeAll();
     }
     @RequestMapping("/checkout")
     public Long getTotalPrice() {

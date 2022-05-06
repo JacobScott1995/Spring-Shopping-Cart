@@ -20,22 +20,25 @@ public class ProductConfig {
                     1L,
                     "Gucci Swagger Zip-Up",
                     210F,
+                    5,
                     "Zip-up",
                     "Gucci",
                     "Swagger"
             );
             Product dior = new Apparel(
                     2L,
-                    "Dior Boss Hoddie",
-                    200F,
-                    "Hoddie",
+                    "Dior Master Zip-Up",
+                    210F,
+                    15,
+                    "Zip-up",
                     "Dior",
-                    "Boss"
+                    "Master"
             );
             Product harryPotter = new Book(
                     3L,
                     "Harry Potter and the Sorcerer's Stone",
                     12F,
+                    5,
                     "Fantasy",
                     "J.K. Rowling",
                     1997
@@ -45,6 +48,7 @@ public class ProductConfig {
                     4L,
                     "John Steinbeck",
                     12F,
+                    5,
                     "Fantasy",
                     "John Steinbeck",
                     1937

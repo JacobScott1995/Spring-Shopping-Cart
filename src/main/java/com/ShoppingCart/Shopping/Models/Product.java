@@ -16,12 +16,15 @@ public class Product {
     private String productName;
     @Column(name = "product_price")
     private float price;
+    @Column(name = "product_quantity")
+    private int quantity;
 
 
-    public Product(long productId, String productName, float price) {
+    public Product(long productId, String productName, float price, int quantity) {
         this.productId = productId;
         this.productName = productName;
         this.price = price;
+        this.quantity = quantity;
     }
 
     public Product() {
@@ -51,12 +54,14 @@ public class Product {
         this.price = price;
     }
 
+
     @Override
     public String toString() {
         return "Product{" +
                 "productId=" + productId +
                 ", productName='" + productName + '\'' +
                 ", price=" + price +
+                ", quantity=" + quantity +
                 '}';
     }
 }
